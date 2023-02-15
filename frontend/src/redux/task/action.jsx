@@ -17,7 +17,7 @@ export const addTask = (payload) => {
 // middleware
 
 export const addTaskThunk = (data) => (dispatch) => {
-    axios.post("http://localhost:3001/task/add", { task: data.task }, {
+    axios.post("https://nextjsexpertia.onrender.com/task/add", { task: data.task }, {
         headers: {
             "Authorization":data.token
         }
@@ -36,7 +36,7 @@ export const addTaskThunk = (data) => (dispatch) => {
 
 
 export const getTaskThunk = (data) => (dispatch) => {
-    axios.get("http://localhost:3001/task/get",  {
+    axios.get("https://nextjsexpertia.onrender.com/task/get",  {
         headers: {
             "Authorization":data.token
         }

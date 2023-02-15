@@ -45,7 +45,7 @@ export const logout = () => {
 // middleware
 
 export const userSignUpThunk = (user) => (dispatch) => {
-    axios.post("http://localhost:3001/user/signup", user).then((res) => {
+    axios.post("https://nextjsexpertia.onrender.com/user/signup", user).then((res) => {
         // console.log(res.data);
         setCookie('token', res.data.token);
         alert("signup successfull")
@@ -59,7 +59,7 @@ export const userSignUpThunk = (user) => (dispatch) => {
 }
 
 export const userLoginThunk = (user) => (dispatch) => {
-    axios.post("http://localhost:3001/user/login", user).then((res) => {
+    axios.post("https://nextjsexpertia.onrender.com/user/login", user).then((res) => {
         console.log(res);
         setCookie('token', res.data.token);
         alert("login successfull")
