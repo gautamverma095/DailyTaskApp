@@ -61,7 +61,7 @@ const Task = () => {
 
   return (
       <>
-      <div className='w-10/12 sm:w-2/6 m-auto mt-14 h-5/6 rounded-md border-solid border-2 border-black'>
+      <div className='w-10/12 sm:w-2/6 m-auto mt-14 h-5/6 border-solid border-2 border-grey'>
 
 
 
@@ -92,8 +92,7 @@ const Task = () => {
 
             <input onChange={handleChange} name = "task" value ={task} type="text" placeholder='Add Task' 
             
-              className="mt-2
-              bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+           className="bg-gray-50 border text-gray-900  focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700  "
             /> <br />
 
             <button
