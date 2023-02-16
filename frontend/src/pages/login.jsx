@@ -60,9 +60,9 @@ export default function Login() {
 
   return (
     <>
-      <div className='w-10/12 flex justify-center sm:justify-between align-middle m-auto mt-12 border-solid border-2 border-yellow '>
+      <div className=' ml-20  flex gap-7  mr-5 justify-center   mt-12   w-90 '>
 
-        <div className='w-full sm:w-5/12 border-solid border-2 border-gray-400 rounded-md p-6'
+        <div className=' border-solid border-2  rounded-md p-3 w-80'
         >
           <h1 className='font-light text-2xl mb-7'
           >Welcome !</h1>
@@ -73,10 +73,10 @@ export default function Login() {
 
             <p className='text-sm mb-8'>Lorem Ipsum is simply </p>
 
-            <div className="mb-1">
-              <label for="username" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">User name</label>
+            <div className="mb-1 ">
+              <label  className="block text-gray-700 text-sm font-bold mb-2">User name</label>
               <input type="text"
-                className="bg-gray-50 border text-gray-900  focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700  "
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Enter your username' name="userName"
                 required
                 onChange={handleChange} value={user.userName}
@@ -84,8 +84,8 @@ export default function Login() {
             </div>
 
             <div className="mb-0">
-              <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-              <input type="password"  className="bg-gray-50 border text-gray-900  focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700  "
+              <label for="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
+              <input type="password"   className="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Enter your password' name="password"
                 onChange={handleChange} value={user.password} required />
             </div>
@@ -97,7 +97,7 @@ export default function Login() {
 
                 />
               </div>
-              <div for="remember" className=" dark:text-gray-300 w-full flex justify-between">
+              <div for="remember" className=" dark:text-gray-500 w-full flex justify-between">
                 <p>Remember me</p> <p><a href="#" className="text-blue-600 hover:underline dark:text-blue-500">Forgot password?</a></p></div>
             </div>
 
@@ -122,11 +122,18 @@ export default function Login() {
 
 
 
-        <div  className='hidden align-middle sm:flex w-80 border-2 border-red-600 '
+        <div
+          className='hidden 
+          align-middle 
+          sm:flex 
+          border-2 
+          ml-25'
         >
-          <img  src="https://millionairetrack.com/assets/images/believe.png" alt='team'
-           
+          <img src="https://millionairetrack.com/assets/images/believe.png"
+            style={{ "width": "500px" }}
+            alt='team'
           />
+           
         </div>
 
 

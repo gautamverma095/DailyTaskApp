@@ -72,8 +72,8 @@ export default function SignUp() {
             <p className='text-sm mb-6'>Lorem Ipsum is simply </p>
 
             <div className="mb-0">
-              <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-              <input type="email"    className="bg-gray-50 border text-gray-900  focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700  "
+              <label for="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+              <input type="email"    className="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Enter your email' name="email"
                 onChange={handleChange} value={user.email}
               />
@@ -81,8 +81,8 @@ export default function SignUp() {
 
 
             <div className="mb-0">
-              <label for="username" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">User name</label>
-              <input type="text"    className="bg-gray-50 border text-gray-900  focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700  "
+              <label for="username"  className="block text-gray-700 text-sm font-bold mb-2">User name</label>
+              <input type="text"     className="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Enter your username' name="userName" required
                 onChange={handleChange} value={user.userName}
               />
@@ -90,16 +90,16 @@ export default function SignUp() {
 
 
             <div className="mb-0">
-              <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-              <input type="password"     className="bg-gray-50 border text-gray-900  focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700  "
+              <label for="password"  className="block text-gray-700 text-sm font-bold mb-2">Password</label>
+              <input type="password"      className="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Enter your password' name="password"
                 onChange={handleChange} value={user.password} />
             </div>
 
 
             <div className="mb-0">
-              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password</label>
-              <input type="password"    className="bg-gray-50 border text-gray-900  focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700  "
+              <label  className="block text-gray-700 text-sm font-bold mb-2">Confirm Password</label>
+              <input type="password"    className="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Confirm your password' ref={ref} name="confirmpassword"
                 />
             </div>
