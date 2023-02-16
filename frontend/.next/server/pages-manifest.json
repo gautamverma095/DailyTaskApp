@@ -2,12 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.html",
-  "/login": "pages/login.html",
-  "/signup": "pages/signup.html",
-  "/Loader": "pages/Loader.html",
-  "/Navbar": "pages/Navbar.html",
-  "/api/hello": "pages/api/hello.js",
-  "/task": "pages/task.html",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/login": "pages/login.js",
+  "/signup": "pages/signup.js"
 }
