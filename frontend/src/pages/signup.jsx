@@ -30,6 +30,12 @@ export default function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    let regx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+     if(!regx.test(user.email)){
+       alert("you have provided invalid email")
+    }
+    
       if(user.userName == "" || user.email == "" || user.password == "")
       {
         alert("Please enter all details")
@@ -39,7 +45,7 @@ export default function SignUp() {
         {
           alert("Password does not match")
         }
-        else {
+        else if(regx.test(user.email)) {
           dispatch(userSignUpThunk(user))
           
         }
@@ -70,6 +76,8 @@ export default function SignUp() {
           <div className="grid gap-6 mb-4">
 
             <p className='text-sm mb-6'>Lorem Ipsum is simply </p>
+            <form action="">
+          
 
             <div className="mb-0">
               <label for="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
@@ -80,7 +88,7 @@ export default function SignUp() {
             </div>
 
 
-            <div className="mb-0">
+            <div className="mb-0 mt-5">
               <label for="username"  className="block text-gray-700 text-sm font-bold mb-2">User name</label>
               <input type="text"     className="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Enter your username' name="userName" required
@@ -89,7 +97,7 @@ export default function SignUp() {
             </div>
 
 
-            <div className="mb-0">
+            <div className="mb-0 mt-5">
               <label for="password"  className="block text-gray-700 text-sm font-bold mb-2">Password</label>
               <input type="password"      className="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Enter your password' name="password"
@@ -97,12 +105,13 @@ export default function SignUp() {
             </div>
 
 
-            <div className="mb-0">
+            <div className="mb-0 mt-5">
               <label  className="block text-gray-700 text-sm font-bold mb-2">Confirm Password</label>
               <input type="password"    className="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Confirm your password' ref={ref} name="confirmpassword"
                 />
-            </div>
+              </div>
+                </form>
 
 
 

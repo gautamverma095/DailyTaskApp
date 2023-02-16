@@ -60,9 +60,9 @@ export default function Login() {
 
   return (
     <>
-      <div className=' ml-20  flex gap-7  mr-5 justify-center   mt-12   w-90 '>
+<div className='w-10/12 flex justify-center sm:justify-between align-middle m-auto mt-8 border-solid border-2 border-white'>
 
-        <div className=' border-solid border-2  rounded-md p-3 w-80'
+         <div className='w-full sm:w-5/12 border-solid border-2 border-gray-400 rounded-md p-6'
         >
           <h1 className='font-light text-2xl mb-7'
           >Welcome !</h1>
@@ -122,15 +122,10 @@ export default function Login() {
 
 
 
-        <div
-          className='hidden 
-          align-middle 
-          sm:flex 
-          border-2 
-          ml-25'
+         <div className='w-7/12 hidden align-middle sm:flex'
         >
           <img src="https://millionairetrack.com/assets/images/believe.png"
-            style={{ "width": "500px" }}
+        
             alt='team'
           />
            

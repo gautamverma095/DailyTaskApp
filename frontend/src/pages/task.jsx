@@ -92,7 +92,7 @@ const Task = () => {
 
             <input onChange={handleChange} name = "task" value ={task} type="text" placeholder='Add Task' 
             
-           className="bg-gray-50 border text-gray-900  focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700  "
+         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline "
             /> <br />
 
             <button
