@@ -1,8 +1,13 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/Loader": "pages/Loader.html",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/login": "pages/login.js",
-  "/signup": "pages/signup.js"
+  "/": "pages/index.html",
+  "/Navbar": "pages/Navbar.html",
+  "/signup": "pages/signup.html",
+  "/api/hello": "pages/api/hello.js",
+  "/login": "pages/login.html",
+  "/task": "pages/task.html",
+  "/404": "pages/404.html"
 }
